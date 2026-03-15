@@ -1,0 +1,1436 @@
+{
+    "enchantments": [
+        {
+            "description": {
+                "translate": "protection"
+            },
+            "max_level": 4,
+            "anvil_cost": 1,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ],
+            "exclusive_set": [
+                "protection",
+                "fire_protection",
+                "blast_protection",
+                "projectile_protection",
+                "density",
+                "breach"
+            ]
+        },
+        {
+            "description": {
+                "translate": "fire_protection"
+            },
+            "max_level": 4,
+            "anvil_cost": 2,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ],
+            "exclusive_set": [
+                "protection",
+                "fire_protection",
+                "blast_protection",
+                "projectile_protection",
+                "density",
+                "breach"
+            ]
+        },
+        {
+            "description": {
+                "translate": "feather_falling"
+            },
+            "max_level": 4,
+            "anvil_cost": 2,
+            "supported_items": [
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ]
+        },
+        {
+            "description": {
+                "translate": "blast_protection"
+            },
+            "max_level": 4,
+            "anvil_cost": 4,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ],
+            "exclusive_set": [
+                "protection",
+                "fire_protection",
+                "blast_protection",
+                "projectile_protection",
+                "density",
+                "breach"
+            ]
+        },
+        {
+            "description": {
+                "translate": "projectile_protection"
+            },
+            "max_level": 4,
+            "anvil_cost": 1,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ],
+            "exclusive_set": [
+                "protection",
+                "fire_protection",
+                "blast_protection",
+                "projectile_protection",
+                "density",
+                "breach"
+            ]
+        },
+        {
+            "description": {
+                "translate": "thorns"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ]
+        },
+        {
+            "description": {
+                "translate": "respiration"
+            },
+            "max_level": 1,
+            "anvil_cost": 4,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet"
+            ]
+        },
+        {
+            "description": {
+                "translate": "depth_strider"
+            },
+            "max_level": 3,
+            "anvil_cost": 8,
+            "supported_items": [
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ],
+            "exclusive_set": [
+                "depth_strider",
+                "frost_walker"
+            ]
+        },
+        {
+            "description": {
+                "translate": "aqua_affinity"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet"
+            ]
+        },
+        {
+            "description": {
+                "translate": "sharpness"
+            },
+            "max_level": 5,
+            "anvil_cost": 1,
+            "supported_items": [
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear"
+            ],
+            "exclusive_set": [
+                "sharpness",
+                "smite",
+                "bane_of_arthropods",
+                "breach",
+                "density"
+            ]
+        },
+        {
+            "description": {
+                "translate": "smite"
+            },
+            "max_level": 5,
+            "anvil_cost": 2,
+            "supported_items": [
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear",
+                "mace"
+            ],
+            "exclusive_set": [
+                "sharpness",
+                "smite",
+                "bane_of_arthropods",
+                "breach",
+                "density"
+            ]
+        },
+        {
+            "description": {
+                "translate": "bane_of_arthropods"
+            },
+            "max_level": 5,
+            "anvil_cost": 2,
+            "supported_items": [
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear",
+                "mace"
+            ],
+            "exclusive_set": [
+                "sharpness",
+                "smite",
+                "bane_of_arthropods",
+                "breach",
+                "density"
+            ]
+        },
+        {
+            "description": {
+                "translate": "knockback"
+            },
+            "max_level": 2,
+            "anvil_cost": 2,
+            "supported_items": [
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear"
+            ]
+        },
+        {
+            "description": {
+                "translate": "fire_aspect"
+            },
+            "max_level": 2,
+            "anvil_cost": 4,
+            "supported_items": [
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear",
+                "mace"
+            ]
+        },
+        {
+            "description": {
+                "translate": "looting"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear"
+            ]
+        },
+        {
+            "description": {
+                "translate": "efficiency"
+            },
+            "max_level": 5,
+            "anvil_cost": 1,
+            "supported_items": [
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_pickaxe",
+                "wooden_shovel",
+                "wooden_hoe",
+                "stone_pickaxe",
+                "stone_shovel",
+                "stone_hoe",
+                "iron_pickaxe",
+                "iron_shovel",
+                "iron_hoe",
+                "diamond_pickaxe",
+                "diamond_shovel",
+                "diamond_hoe",
+                "netherite_pickaxe",
+                "netherite_shovel",
+                "netherite_hoe",
+                "golden_pickaxe",
+                "golden_shovel",
+                "golden_hoe",
+                "copper_pickaxe",
+                "copper_shovel",
+                "copper_hoe",
+                "shears"
+            ]
+        },
+        {
+            "description": {
+                "translate": "silk_touch"
+            },
+            "max_level": 1,
+            "anvil_cost": 8,
+            "supported_items": [
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_pickaxe",
+                "wooden_shovel",
+                "wooden_hoe",
+                "stone_pickaxe",
+                "stone_shovel",
+                "stone_hoe",
+                "iron_pickaxe",
+                "iron_shovel",
+                "iron_hoe",
+                "diamond_pickaxe",
+                "diamond_shovel",
+                "diamond_hoe",
+                "netherite_pickaxe",
+                "netherite_shovel",
+                "netherite_hoe",
+                "golden_pickaxe",
+                "golden_shovel",
+                "golden_hoe",
+                "copper_pickaxe",
+                "copper_shovel",
+                "copper_hoe"
+            ],
+            "exclusive_set": [
+                "silk_touch",
+                "fortune"
+            ]
+        },
+        {
+            "description": {
+                "translate": "unbreaking"
+            },
+            "max_level": 3,
+            "anvil_cost": 2,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots",
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear",
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_pickaxe",
+                "wooden_shovel",
+                "wooden_hoe",
+                "stone_pickaxe",
+                "stone_shovel",
+                "stone_hoe",
+                "iron_pickaxe",
+                "iron_shovel",
+                "iron_hoe",
+                "diamond_pickaxe",
+                "diamond_shovel",
+                "diamond_hoe",
+                "netherite_pickaxe",
+                "netherite_shovel",
+                "netherite_hoe",
+                "golden_pickaxe",
+                "golden_shovel",
+                "golden_hoe",
+                "copper_pickaxe",
+                "copper_shovel",
+                "copper_hoe",
+                "flint_and_steel",
+                "fishing_rod",
+                "carrot_on_a_stick",
+                "warped_fungus_on_a_stick",
+                "shears",
+                "bow",
+                "shield",
+                "trident",
+                "crossbow",
+                "elytra",
+                "mace",
+                "brush"
+            ]
+        },
+        {
+            "description": {
+                "translate": "fortune"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_pickaxe",
+                "wooden_shovel",
+                "wooden_hoe",
+                "stone_pickaxe",
+                "stone_shovel",
+                "stone_hoe",
+                "iron_pickaxe",
+                "iron_shovel",
+                "iron_hoe",
+                "diamond_pickaxe",
+                "diamond_shovel",
+                "diamond_hoe",
+                "netherite_pickaxe",
+                "netherite_shovel",
+                "netherite_hoe",
+                "golden_pickaxe",
+                "golden_shovel",
+                "golden_hoe",
+                "copper_pickaxe",
+                "copper_shovel",
+                "copper_hoe"
+            ],
+            "exclusive_set": [
+                "silk_touch",
+                "fortune"
+            ]
+        },
+        {
+            "description": {
+                "translate": "power"
+            },
+            "max_level": 5,
+            "anvil_cost": 1,
+            "supported_items": [
+                "bow"
+            ]
+        },
+        {
+            "description": {
+                "translate": "punch"
+            },
+            "max_level": 2,
+            "anvil_cost": 4,
+            "supported_items": [
+                "bow"
+            ]
+        },
+        {
+            "description": {
+                "translate": "flame"
+            },
+            "max_level": 1,
+            "anvil_cost": 4,
+            "supported_items": [
+                "bow"
+            ]
+        },
+        {
+            "description": {
+                "translate": "infinity"
+            },
+            "max_level": 1,
+            "anvil_cost": 8,
+            "supported_items": [
+                "bow"
+            ],
+            "exclusive_set": [
+                "infinity",
+                "mending"
+            ]
+        },
+        {
+            "description": {
+                "translate": "luck_of_the_sea"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "fishing_rod"
+            ]
+        },
+        {
+            "description": {
+                "translate": "lure"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "fishing_rod"
+            ]
+        },
+        {
+            "description": {
+                "translate": "frost_walker"
+            },
+            "max_level": 2,
+            "anvil_cost": 4,
+            "supported_items": [
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ],
+            "exclusive_set": [
+                "depth_strider",
+                "frost_walker"
+            ]
+        },
+        {
+            "description": {
+                "translate": "mending"
+            },
+            "max_level": 1,
+            "anvil_cost": 4,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots",
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear",
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_pickaxe",
+                "wooden_shovel",
+                "wooden_hoe",
+                "stone_pickaxe",
+                "stone_shovel",
+                "stone_hoe",
+                "iron_pickaxe",
+                "iron_shovel",
+                "iron_hoe",
+                "diamond_pickaxe",
+                "diamond_shovel",
+                "diamond_hoe",
+                "netherite_pickaxe",
+                "netherite_shovel",
+                "netherite_hoe",
+                "golden_pickaxe",
+                "golden_shovel",
+                "golden_hoe",
+                "copper_pickaxe",
+                "copper_shovel",
+                "copper_hoe",
+                "flint_and_steel",
+                "fishing_rod",
+                "carrot_on_a_stick",
+                "warped_fungus_on_a_stick",
+                "shears",
+                "bow",
+                "shield",
+                "trident",
+                "crossbow",
+                "elytra",
+                "mace",
+                "brush"
+            ],
+            "exclusive_set": [
+                "infinity",
+                "mending"
+            ]
+        },
+        {
+            "description": {
+                "translate": "binding_curse"
+            },
+            "max_level": 1,
+            "anvil_cost": 8,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots",
+                "elytra"
+            ]
+        },
+        {
+            "description": {
+                "translate": "vanishing_curse"
+            },
+            "max_level": 1,
+            "anvil_cost": 8,
+            "supported_items": [
+                "leather_helmet",
+                "chainmail_helmet",
+                "iron_helmet",
+                "diamond_helmet",
+                "golden_helmet",
+                "turtle_helmet",
+                "netherite_helmet",
+                "copper_helmet",
+                "leather_chestplate",
+                "chainmail_chestplate",
+                "iron_chestplate",
+                "diamond_chestplate",
+                "golden_chestplate",
+                "netherite_chestplate",
+                "copper_chestplate",
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings",
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots",
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword",
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear",
+                "wooden_axe",
+                "stone_axe",
+                "iron_axe",
+                "diamond_axe",
+                "netherite_axe",
+                "golden_axe",
+                "copper_axe",
+                "wooden_pickaxe",
+                "wooden_shovel",
+                "wooden_hoe",
+                "stone_pickaxe",
+                "stone_shovel",
+                "stone_hoe",
+                "iron_pickaxe",
+                "iron_shovel",
+                "iron_hoe",
+                "diamond_pickaxe",
+                "diamond_shovel",
+                "diamond_hoe",
+                "netherite_pickaxe",
+                "netherite_shovel",
+                "netherite_hoe",
+                "golden_pickaxe",
+                "golden_shovel",
+                "golden_hoe",
+                "copper_pickaxe",
+                "copper_shovel",
+                "copper_hoe",
+                "flint_and_steel",
+                "fishing_rod",
+                "carrot_on_a_stick",
+                "warped_fungus_on_a_stick",
+                "shears",
+                "bow",
+                "shield",
+                "trident",
+                "crossbow",
+                "elytra",
+                "mace",
+                "brush"
+            ]
+        },
+        {
+            "description": {
+                "translate": "impaling"
+            },
+            "max_level": 5,
+            "anvil_cost": 4,
+            "supported_items": [
+                "trident"
+            ]
+        },
+        {
+            "description": {
+                "translate": "riptide"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "trident"
+            ],
+            "exclusive_set": [
+                "riptide",
+                "loyalty"
+            ]
+        },
+        {
+            "description": {
+                "translate": "loyalty"
+            },
+            "max_level": 3,
+            "anvil_cost": 1,
+            "supported_items": [
+                "trident"
+            ],
+            "exclusive_set": [
+                "riptide",
+                "loyalty"
+            ]
+        },
+        {
+            "description": {
+                "translate": "channeling"
+            },
+            "max_level": 1,
+            "anvil_cost": 8,
+            "supported_items": [
+                "trident"
+            ],
+            "exclusive_set": [
+                "riptide",
+                "channeling"
+            ]
+        },
+        {
+            "description": {
+                "translate": "multishot"
+            },
+            "max_level": 1,
+            "anvil_cost": 4,
+            "supported_items": [
+                "crossbow"
+            ],
+            "exclusive_set": [
+                "multishot",
+                "piercing"
+            ]
+        },
+        {
+            "description": {
+                "translate": "piercing"
+            },
+            "max_level": 4,
+            "anvil_cost": 1,
+            "supported_items": [
+                "crossbow"
+            ],
+            "exclusive_set": [
+                "multishot",
+                "piercing"
+            ]
+        },
+        {
+            "description": {
+                "translate": "quick_charge"
+            },
+            "max_level": 3,
+            "anvil_cost": 2,
+            "supported_items": [
+                "crossbow"
+            ]
+        },
+        {
+            "description": {
+                "translate": "soul_speed"
+            },
+            "max_level": 3,
+            "anvil_cost": 8,
+            "supported_items": [
+                "leather_boots",
+                "chainmail_boots",
+                "iron_boots",
+                "diamond_boots",
+                "golden_boots",
+                "netherite_boots",
+                "copper_boots"
+            ]
+        },
+        {
+            "description": {
+                "translate": "swift_sneak"
+            },
+            "max_level": 3,
+            "anvil_cost": 8,
+            "supported_items": [
+                "leather_leggings",
+                "chainmail_leggings",
+                "iron_leggings",
+                "diamond_leggings",
+                "golden_leggings",
+                "netherite_leggings",
+                "copper_leggings"
+            ]
+        },
+        {
+            "description": {
+                "translate": "wind_burst"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "mace"
+            ]
+        },
+        {
+            "description": {
+                "translate": "density"
+            },
+            "max_level": 5,
+            "anvil_cost": 2,
+            "supported_items": [
+                "mace"
+            ],
+            "exclusive_set": [
+                "sharpness",
+                "smite",
+                "bane_of_arthropods",
+                "breach",
+                "density"
+            ]
+        },
+        {
+            "description": {
+                "translate": "breach"
+            },
+            "max_level": 4,
+            "anvil_cost": 4,
+            "supported_items": [
+                "mace"
+            ],
+            "exclusive_set": [
+                "sharpness",
+                "smite",
+                "bane_of_arthropods",
+                "breach",
+                "density"
+            ]
+        },
+        {
+            "description": {
+                "translate": "sweeping_edge"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "wooden_sword",
+                "stone_sword",
+                "iron_sword",
+                "diamond_sword",
+                "netherite_sword",
+                "golden_sword",
+                "copper_sword"
+            ]
+        },
+        {
+            "description": {
+                "translate": "lunge"
+            },
+            "max_level": 3,
+            "anvil_cost": 4,
+            "supported_items": [
+                "wooden_spear",
+                "stone_spear",
+                "iron_spear",
+                "diamond_spear",
+                "netherite_spear",
+                "golden_spear",
+                "copper_spear"
+            ]
+        }
+    ],
+    "items": {
+        "leather_helmet": {
+            "durability": 55
+        },
+        "chainmail_helmet": {
+            "durability": 165
+        },
+        "iron_helmet": {
+            "durability": 165
+        },
+        "diamond_helmet": {
+            "durability": 363
+        },
+        "golden_helmet": {
+            "durability": 77
+        },
+        "turtle_helmet": {
+            "durability": 275
+        },
+        "netherite_helmet": {
+            "durability": 407
+        },
+        "leather_chestplate": {
+            "durability": 80
+        },
+        "chainmail_chestplate": {
+            "durability": 240
+        },
+        "iron_chestplate": {
+            "durability": 240
+        },
+        "diamond_chestplate": {
+            "durability": 528
+        },
+        "golden_chestplate": {
+            "durability": 112
+        },
+        "netherite_chestplate": {
+            "durability": 592
+        },
+        "leather_leggings": {
+            "durability": 75
+        },
+        "chainmail_leggings": {
+            "durability": 225
+        },
+        "iron_leggings": {
+            "durability": 225
+        },
+        "diamond_leggings": {
+            "durability": 495
+        },
+        "golden_leggings": {
+            "durability": 105
+        },
+        "netherite_leggings": {
+            "durability": 555
+        },
+        "leather_boots": {
+            "durability": 65
+        },
+        "chainmail_boots": {
+            "durability": 195
+        },
+        "iron_boots": {
+            "durability": 195
+        },
+        "diamond_boots": {
+            "durability": 429
+        },
+        "golden_boots": {
+            "durability": 91
+        },
+        "netherite_boots": {
+            "durability": 481
+        },
+        "wooden_sword": {
+            "durability": 59
+        },
+        "stone_sword": {
+            "durability": 131
+        },
+        "iron_sword": {
+            "durability": 250
+        },
+        "diamond_sword": {
+            "durability": 1561
+        },
+        "netherite_sword": {
+            "durability": 2031
+        },
+        "golden_sword": {
+            "durability": 32
+        },
+        "wooden_axe": {
+            "durability": 59
+        },
+        "stone_axe": {
+            "durability": 131
+        },
+        "iron_axe": {
+            "durability": 250
+        },
+        "diamond_axe": {
+            "durability": 1561
+        },
+        "netherite_axe": {
+            "durability": 2031
+        },
+        "golden_axe": {
+            "durability": 32
+        },
+        "wooden_pickaxe": {
+            "durability": 59
+        },
+        "wooden_shovel": {
+            "durability": 59
+        },
+        "wooden_hoe": {
+            "durability": 59
+        },
+        "stone_pickaxe": {
+            "durability": 131
+        },
+        "stone_shovel": {
+            "durability": 131
+        },
+        "stone_hoe": {
+            "durability": 131
+        },
+        "iron_pickaxe": {
+            "durability": 250
+        },
+        "iron_shovel": {
+            "durability": 250
+        },
+        "iron_hoe": {
+            "durability": 250
+        },
+        "diamond_pickaxe": {
+            "durability": 1561
+        },
+        "diamond_shovel": {
+            "durability": 1561
+        },
+        "diamond_hoe": {
+            "durability": 1561
+        },
+        "netherite_pickaxe": {
+            "durability": 2031
+        },
+        "netherite_shovel": {
+            "durability": 2031
+        },
+        "netherite_hoe": {
+            "durability": 2031
+        },
+        "golden_pickaxe": {
+            "durability": 32
+        },
+        "golden_shovel": {
+            "durability": 32
+        },
+        "golden_hoe": {
+            "durability": 32
+        },
+        "flint_and_steel": {
+            "durability": 64
+        },
+        "fishing_rod": {
+            "durability": 64
+        },
+        "carrot_on_a_stick": {
+            "durability": 25
+        },
+        "warped_fungus_on_a_stick": {
+            "durability": 100
+        },
+        "shears": {
+            "durability": 238
+        },
+        "bow": {
+            "durability": 384
+        },
+        "shield": {
+            "durability": 337
+        },
+        "trident": {
+            "durability": 250
+        },
+        "crossbow": {
+            "durability": 465
+        },
+        "elytra": {
+            "durability": 432
+        },
+        "mace": {
+            "durability": 500
+        },
+        "brush": {
+            "durability": 64
+        },
+        "copper_helmet": {
+            "durability": 121
+        },
+        "copper_chestplate": {
+            "durability": 176
+        },
+        "copper_leggings": {
+            "durability": 165
+        },
+        "copper_boots": {
+            "durability": 143
+        },
+        "wooden_spear": {
+            "durability": 59
+        },
+        "stone_spear": {
+            "durability": 131
+        },
+        "iron_spear": {
+            "durability": 250
+        },
+        "diamond_spear": {
+            "durability": 1561
+        },
+        "netherite_spear": {
+            "durability": 2031
+        },
+        "golden_spear": {
+            "durability": 32
+        },
+        "copper_spear": {
+            "durability": 190
+        }
+    }
+}
