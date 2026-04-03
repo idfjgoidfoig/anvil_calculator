@@ -81,7 +81,8 @@ class TestAnvilCalculator(unittest.TestCase):
                 EnchantmentNamespaceId.FORTUNE: 2,
                 EnchantmentNamespaceId.EFFICIENCY: 4,
                 EnchantmentNamespaceId.MENDING: 1
-        })))
+            })
+        ))
         
 
         calculator = AnvilCalculator(items, except_item)

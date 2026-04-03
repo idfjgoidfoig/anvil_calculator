@@ -1,5 +1,6 @@
-from typing import Self, Tuple, List, Dict, Union
+from typing import Self, Tuple, List, Dict, Union, Literal, Callable, overload
 from dataclasses import dataclass
+import re
 from settings import EnchantmentNamespaceId, ItemNamespace, ENCHANTMENTS, ITEM_DURABILITY_TABLE
 from int_to_roman import int_to_roman
 
@@ -27,11 +28,13 @@ class Enchantments(dict):
 
 @dataclass
 class Item:
-    def __init__(self, 
-                 namespace: ItemNamespace, 
-                 repair_cost: int = 0, 
-                 durability: Union[int, None] = None, 
-                 enchantments: Union[Enchantments, Dict[EnchantmentNamespaceId, int], None] = None) -> None:
+    def __init__(
+            self, 
+            namespace: ItemNamespace, 
+            repair_cost: int = 0, 
+            durability: Union[int, None] = None, 
+            enchantments: Union[Enchantments, Dict[EnchantmentNamespaceId, int], None] = None
+            ) -> None:
         self._namespace: ItemNamespace = namespace
 
         self._repair_cost: int = repair_cost
@@ -55,23 +58,23 @@ class Item:
 
 
     @property
-    def namespace(self):
+    def namespace(self) -> ItemNamespace:
         return self._namespace
 
     @property
-    def repair_cost(self):
+    def repair_cost(self) -> int:
         return self._repair_cost
 
     @property
-    def durability(self):
+    def durability(self) -> Union[int, None]:
         return self._durability
 
     @property
-    def enchantments(self):
+    def enchantments(self) -> Enchantments:
         return self._enchantments
 
     @property
-    def the_highest_durability(self):
+    def the_highest_durability(self) -> Union[int, None]:
         return self._the_highest_durability
 
 
@@ -118,30 +121,87 @@ class Item:
         return self.__class__(self._namespace, repair_cost, durability, enchantments), cost_lvl if 0 < cost_lvl < 40 else None
 
 
+class IntMatcher(str):
+    def __init__(self, conditions: Union[str, List[int], int, None] = None) -> None:
+        if conditions is None:
+            self._match_func: Callable[[int], bool] = lambda _: True
+        elif isinstance(conditions, int):
+            self._match_func = lambda x: x == conditions
+        elif isinstance(conditions, list):
+            self._match_func = lambda x: x in conditions
+        elif isinstance(conditions, str):
+            iter = re.finditer(r"(<=|>=|<|>|==|!=|<>)?\s*(\d+)", conditions)
+            func_lst = []
+            for match in iter:
+                operator, number = match.groups()
+                n: int = int(number)
+                if operator in (None, "=="):
+                    func_lst.append(lambda x, n=n: x == n)
+                elif operator in ("!=", "<>"):
+                    func_lst.append(lambda x, n=n: x != n)
+                elif operator == "<":
+                    func_lst.append(lambda x, n=n: x < n)
+                elif operator == ">":
+                    func_lst.append(lambda x, n=n: x > n)
+                elif operator == "<=":
+                    func_lst.append(lambda x, n=n: x <= n)
+                elif operator == ">=":
+                    func_lst.append(lambda x, n=n: x >= n)
+            self._match_func = lambda x: all(func(x) for func in func_lst)
+
+    def match(self, number: int) -> bool:
+        return self._match_func(number)
+
+
 class EnchantmentsMatcher(dict):
-    def __init__(self, enchantments: Union[Dict[EnchantmentNamespaceId, List[int]], Enchantments]) -> None:
+    def __init__(self, enchantments: Union[Dict[EnchantmentNamespaceId, IntMatcher | List[int] | int], Enchantments]) -> None:
+        for enchantment_id, conditions in enchantments.items():
+            if isinstance(conditions, int) or isinstance(conditions, list):
+                enchantments[enchantment_id] = IntMatcher(conditions)
         super().__init__(enchantments)
 
     def match(self, enchantments: Enchantments) -> bool:
         if not self:
             return True
         def gen():
-            for enchantment_id, enchantment_lvls in self.items():
-                if enchantment_id not in enchantments.keys() or enchantments[enchantment_id] not in enchantment_lvls:
+            for enchantment_id, conditions in self.items():
+                if enchantment_id not in enchantments.keys() or not conditions.match(enchantments[enchantment_id]):
                     yield False
         return all(gen())
     
     @classmethod
     def create_by_enchantments(cls, enchantments: Enchantments) -> Self:
-        return cls({enchantment_id: [enchantment_lvl] for enchantment_id, enchantment_lvl in enchantments.items()})
+        return cls({enchantment_id: enchantment_lvl for enchantment_id, enchantment_lvl in enchantments.items()})
 
 
 class ItemMatcher:
-    def __init__(self, 
-                 namespace: Union[ItemNamespace, None] = None,
-                 repair_cost: Union[List[int], int, None] = None,
-                 durability: Union[List[int], int, None] = None,
-                 enchantments: Union[EnchantmentsMatcher, Dict[EnchantmentNamespaceId, List[int]], Enchantments, None] = None) -> None:
+    # @overload
+    # def __init__(
+    #         self, 
+    #         namespace: Union[ItemNamespace, None] = None,
+    #         repair_cost: Union[List[int], int, None] = None,
+    #         durability: Union[List[int], int, None] = None,
+    #         enchantments: Union[EnchantmentsMatcher, Dict[EnchantmentNamespaceId, List[int]], Enchantments, None] = None,
+    #         is_full_durability: Literal[None] = None
+    #         ) -> None: ...
+    
+    # @overload
+    # def __init__(
+    #         self, 
+    #         namespace: Union[ItemNamespace, None] = None,
+    #         repair_cost: Union[List[int], int, None] = None,
+    #         durability: None = None,
+    #         enchantments: Union[EnchantmentsMatcher, Dict[EnchantmentNamespaceId, List[int]], Enchantments, None] = None,
+    #         is_full_durability: Literal[True] = True
+    #         ) -> None: ...
+
+    def __init__(
+            self, 
+            namespace: Union[ItemNamespace, None] = None,
+            repair_cost: Union[IntMatcher, List[int], int, None] = None,
+            durability: Union[IntMatcher, str, List[int], int, None] = None,
+            enchantments: Union[EnchantmentsMatcher, Union[Dict[EnchantmentNamespaceId, IntMatcher | List[int] | int], Enchantments], None] = None,
+            ) -> None:
         if namespace is None:
             self._namespace = None
         elif isinstance(namespace, str):
@@ -150,15 +210,27 @@ class ItemMatcher:
         if repair_cost is None:
             self._repair_cost = None
         elif isinstance(repair_cost, int):
-            self._repair_cost = [repair_cost]
+            self._repair_cost = IntMatcher(repair_cost)
         elif isinstance(repair_cost, list):
+            self._repair_cost = IntMatcher(repair_cost)
+        elif isinstance(repair_cost, IntMatcher):
             self._repair_cost = repair_cost
 
         if durability is None:
             self._durability = None
         elif isinstance(durability, int):
-            self._durability = [durability]
+            self._durability = IntMatcher(durability)
         elif isinstance(durability, list):
+            self._durability = IntMatcher(durability)
+        elif isinstance(durability, str):
+            if "full" in durability:
+                the_height_durability = ITEM_DURABILITY_TABLE.get(namespace)
+                if the_height_durability is None:
+                    raise ValueError(f"Can't set full durability for {namespace}")
+                self._durability = IntMatcher(the_height_durability)
+            else:
+                self._durability = IntMatcher(durability)
+        elif isinstance(durability, IntMatcher):
             self._durability = durability
 
         if enchantments is None:
@@ -172,9 +244,9 @@ class ItemMatcher:
     def match(self, item: Item) -> bool:
         if self._namespace is not None and item.namespace not in self._namespace:
             return False
-        if self._repair_cost is not None and item.repair_cost not in self._repair_cost:
+        if self._repair_cost is not None and not self._repair_cost.match(item.repair_cost):
             return False
-        if self._durability is not None and item.durability not in self._durability:
+        if self._durability is not None and item.durability is not None and not self._durability.match(item.durability):
             return False
         if self._enchantments is not None and not self._enchantments.match(item.enchantments):
             return False
@@ -190,18 +262,30 @@ class ItemMatcher:
 @dataclass
 class Step:
     def __init__(self, main_item: Item, sacrificial_item: Item, cost_lvl: int) -> None:
-        self.main_item = main_item
-        self.sacrificial_item = sacrificial_item
-        self.cost_lvl = cost_lvl
+        self.__main_item = main_item
+        self.__sacrificial_item = sacrificial_item
+        self.__cost_lvl = cost_lvl
+
+    @property
+    def main_item(self):
+        return self.__main_item
+
+    @property
+    def sacrificial_item(self):
+        return self.__sacrificial_item
+
+    @property
+    def cost_lvl(self):
+        return self.__cost_lvl
 
 
 class AnvilCalculator:
     def __init__(self, items: List[Item], excepted_item: ItemMatcher) -> None:
         self.items = items
         self.excepted_item = excepted_item
-        self.__result = None
+        self.__result: List[Tuple[List[Step], int]] = []
 
-    def __dfs_find_steps(self, items: Union[List[Item], None] = None, steps: List[Step] = None, cost_lvl: int = 0) -> None:
+    def __dfs_find_steps(self, items: Union[List[Item], None] = None, steps: Union[List[Step], None] = None, cost_lvl: int = 0) -> None:
         if items is None:
             items = self.items
         if steps is None:
@@ -227,7 +311,7 @@ class AnvilCalculator:
                     continue
 
     def calculate(self) -> Union[List[Tuple[List[Step], int]], None]:
-        self.__result: List[tuple[List[Step], int]] = []
+        self.__result.clear()
         self.__dfs_find_steps()
         if not self.__result:
             return None
