@@ -1,4 +1,4 @@
-from typing import Self, Tuple, List, Dict, Union, Literal, Callable, overload
+from typing import Self, Tuple, List, Dict, Union, Callable
 from dataclasses import dataclass
 import re
 from settings import EnchantmentNamespaceId, ItemNamespace, ENCHANTMENTS, ITEM_DURABILITY_TABLE
@@ -175,26 +175,6 @@ class EnchantmentsMatcher(dict):
 
 
 class ItemMatcher:
-    # @overload
-    # def __init__(
-    #         self, 
-    #         namespace: Union[ItemNamespace, None] = None,
-    #         repair_cost: Union[List[int], int, None] = None,
-    #         durability: Union[List[int], int, None] = None,
-    #         enchantments: Union[EnchantmentsMatcher, Dict[EnchantmentNamespaceId, List[int]], Enchantments, None] = None,
-    #         is_full_durability: Literal[None] = None
-    #         ) -> None: ...
-    
-    # @overload
-    # def __init__(
-    #         self, 
-    #         namespace: Union[ItemNamespace, None] = None,
-    #         repair_cost: Union[List[int], int, None] = None,
-    #         durability: None = None,
-    #         enchantments: Union[EnchantmentsMatcher, Dict[EnchantmentNamespaceId, List[int]], Enchantments, None] = None,
-    #         is_full_durability: Literal[True] = True
-    #         ) -> None: ...
-
     def __init__(
             self, 
             namespace: Union[ItemNamespace, None] = None,
